@@ -89,11 +89,78 @@
 // }
 // console.log(sum);
 
-let x = "8 j 8   mBliB8g  imjB8B8  jl  B"
-let newStr = ''
-for (let i = 0; i < x.length; i++) {
-    if (x[i] != ' ') {
-        newStr = newStr + x[i]
+// let x = "8 j 8   mBliB8g  imjB8B8  jl  B"
+// let newStr = ''
+// for (let i = 0; i < x.length; i++) {
+//     if (x[i] != ' ') {
+//         newStr = newStr + x[i]
+//     }
+// }
+// console.log(newStr);
+
+// // // Create function
+// // function greet(name) {
+// //     // let name = 'John'
+// //     return 'Hello, ' + name
+// // }
+// // // Using function
+// // let result = greet('John')
+// // console.log(result);
+// let greet = function (name) {
+//     // let name = 'John'
+//     return 'Hello, ' + name
+// }
+// // Using function
+// let result = greet('John')
+// console.log(result);
+
+// let str = '1234'
+// let num = 1234 
+
+
+// let sheeps = [true,  true,  true,  false,
+//     true,  true,  true,  true ,
+//     true,  false, true,  false,
+//     true,  false, false, true ,
+//     true,  true,  true,  true ,
+//     false, false, true,  true]
+
+// function countSheeps(arrayOfSheep) {
+//   let count = 0
+//   for (let sheep of arrayOfSheep) {
+//     if (sheep == true) {
+//         count++
+//     }
+//   }
+//   return count
+// } 
+
+// let result = countSheeps(sheeps)
+// console.log(result);
+
+// function greet(name) {
+//     let result = 'Hello, ' + name + ' how are you doing today?'
+//     return result
+// }
+
+// console.log(greet('John'))
+
+// function basicOp(operation, valuer1, value2) {
+//     if (operation == '+') return valuer1 + value2
+//     if (operation == '-') return valuer1 - value2
+//     if (operation == '*') return valuer1 * value2
+//     if (operation == '/') return valuer1 / value2
+// }
+// console.log(basicOp('+', 1, 2));
+
+let arr = [1, 2, 3]
+
+function maps(arrayOfNum) {
+    let newArr = []
+    for (let num of arrayOfNum) {
+        newArr.push(num * 2)
     }
+    return newArr
 }
-console.log(newStr);
+
+console.log(maps(arr))

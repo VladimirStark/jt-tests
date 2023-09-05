@@ -153,14 +153,104 @@
 // }
 // console.log(basicOp('+', 1, 2));
 
-let arr = [1, 2, 3]
+// let arr = [1, 2, 3]
 
-function maps(arrayOfNum) {
-    let newArr = []
-    for (let num of arrayOfNum) {
-        newArr.push(num * 2)
+// function maps(arrayOfNum) {
+//     let newArr = []
+//     for (let num of arrayOfNum) {
+//         newArr.push(num * 2)
+//     }
+//     return newArr
+// }
+
+// console.log(maps(arr))
+
+
+
+// function digitize(n) {
+//     // let n = 35231
+//     let str = n + ''
+//     let array = str.split('')
+//     let reversedArr = array.reverse()
+//     for (let i = 0; i < reversedArr.length; i++) {
+//         reversedArr[i] = +reversedArr[i]
+//     }
+//     return reversedArr
+//     return String(n).split('').reverse().map(function (digit) {
+//         return +digit
+//     })
+
+//     // let newArr = []
+//     // while (n) {
+//     //     let digit = n % 10
+//     //     n = Math.floor(n / 10)
+//     //     newArr.push(digit)
+//     // }
+//     // return newArr 
+//     // // return [1,3,2,5,3]
+// }
+
+// let num = 35231
+// let result = digitize(num)
+// console.log(result);
+
+// function abbrevName(name){
+//     // // let name = 'patrick feeney'
+//     // let names = name.split(' ') // ['pftrick', 'feeney']
+//     // let firstLetter  = names[0][0].toUpperCase()
+//     // let secondLetter = names[1][0].toUpperCase()
+//     // let result = firstLetter + '.' + secondLetter
+//     // return result
+//     return name  // ['patrick', 'feeney']
+//     .split(' ').map(function (word) {
+//         return word[0].toUpperCase()
+//     })  // 'P.F'
+//     .join('.')
+//     // return 'P.F'
+// }
+
+// let fullname = 'patrick feeney'
+// let result = abbrevName(fullname)
+// console.log(result);
+
+// function past(h, m, s){
+//     // let h = 1
+//     // let m = 1
+//     // let s = 1
+//     let seconds = h * 3600 + m * 60 + s
+//     return seconds * 1000
+//     // return 3661000
+// }
+
+// let result = past(1,1,1)  //3661000
+// console.log(result);
+
+// function paperwork(n, m) {
+//     // let n = 5
+//     // let m = 5
+//     if (n > 0 && m > 0) { // logical AND
+//       return n * m  // return = 25
+//     } else {
+//       return 0
+//     }
+//   }
+  
+
+// function loveFunc(flower1, flower2) {
+//     if ((flower1 + flower2) % 2 == 0) {
+//         return false
+//     } else {
+//         return true
+//     } 
+// }
+
+// let result = loveFunc(1, 4)
+// console.log(result)
+
+function simpleMultiplication(number) {
+    if (number % 2 == 0) {
+      return number * 8
+    } else {
+      return number * 9
     }
-    return newArr
-}
-
-console.log(maps(arr))
+ }

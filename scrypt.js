@@ -349,3 +349,105 @@
 
 // let result = stringy(6);
 // console.log(result);
+
+// function getCount(str) {
+//   // let str = 'abracadabra'
+//   let vowels = ['a', 'e', 'i', 'o', 'u']
+//   let count = 0
+//   for (let letter of str) {
+//     if (vowels.includes(letter)) {
+//       count++
+//     }
+//   }
+//   return count
+// }
+// let result = getCount('abracadabra')
+// console.log(result); //5
+
+
+// function disemvowel(str) {
+// // let str = "This website is for losers LOL!"
+// let vowels = ['a', 'e', 'i', 'o', 'u']
+// let newStr = ''
+// for (let letter of str) {
+//   if (!vowels.includes(letter.toLowerCase())) {
+//     newStr +=letter
+//   }
+// }
+// return newStr
+// }
+// let result = disemvowel("This website is for losers LOL!")
+// console.log(result); // "Ths wbst s fr lsrs LL!"
+
+
+// function squareDigits(num) {
+//   // let num = 3212
+//   let newNum = ''
+//   let digits = num.toString().split('') // ['3', '2', '1', '2']
+//   for (let digit of digits) {
+//     newNum += digit**2
+//   } //newNum = '9414'
+//   return +newNum //  9414
+// }
+
+// let result = squareDigits(3212)
+// console.log(result); //9414
+
+// function highAndLow(numbers) {
+//   // let numbers = "8 3 -5 42 -1 0 0 -9 4 7 4 -4"
+//   let numberArr = numbers.split(' ')
+//   // numberArr = ['8', '3', '-5', '42', '-1', '0', '0', '-9', '4', '7', '4', '-4')]
+//   let min = numberArr[0] // '8'
+//   let max = numberArr[0] // '8'
+//   for (number of numberArr) {
+//     if (+min > +number) {
+//         min = number
+//     }
+//     if (+max < +number) {
+//       max = number
+//     }
+//   }
+//   return max + ' ' + min
+// }
+
+// // let result = highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")
+// // console.log(result); // "42 -9"
+
+// function descendingOrder(n) {
+//   // let n = 42145
+//   return +(n.toString() // '42145'
+//           .split('')  // ['4', '2', '1', '4', '5']
+//           .sort(function (a, b) {
+//             return b - a
+//           })  // ['5', '4', '4', '2', '1']
+//           .join('')) // '54421'
+// }
+
+// let result = descendingOrder(42145)
+// console.log(result); // 54421
+
+
+//  function getMiddle(s) {
+//   // let s = 'testing'
+//   if (s.length < 2) return s
+//   let index = Math.floor((s.length - 1) / 2) // 3
+//   return s.slice(index, -index)
+
+//  }
+
+//  let result = getMiddle('testing')
+//  console.log(result); // t
+
+
+function accum(s) {
+  // let s = "RqaEzty"
+  let letters = s.split('') 
+  let repeatedLetters = letters.map(function(letter,index) {
+    return letter.toUpperCase() + letter.toLowerCase().repeat(index)
+    }) // ["R-Qq 'Aaa' Eeee-Zzzzz-Tttttt-Yyyyyyy"]
+    return repeatedLetters.join('-')
+
+}
+
+let result = accum("RqaEzty")
+console.log(result); // "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"

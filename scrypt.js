@@ -247,10 +247,105 @@
 // let result = loveFunc(1, 4)
 // console.log(result)
 
-function simpleMultiplication(number) {
-    if (number % 2 == 0) {
-      return number * 8
-    } else {
-      return number * 9
-    }
- }
+// function simpleMultiplication(number) {
+//     if (number % 2 == 0) {
+//       return number * 8
+//     } else {
+//       return number * 9
+//     }
+//  }
+
+ // function getPlanetName(id) {
+//     let name;
+//     switch (id) {
+//         case 1:
+//             return  'Mercury'
+//            //   name =
+//           //  break;
+//         case 2:
+//             return 'Venus'
+//           //  break;
+//         case 3:
+//             return 'Earth'
+//           //  break;
+//     }
+//     return name;
+// }
+
+// let result = getPlanetName(1);
+// console.log(result);
+
+// function getASCII(c) {
+//     return c.charCodeAt( );
+// }
+
+// let result = getASCII('A')
+// console.log(result);
+
+// function twoSort(s) {
+//     s.sort();
+//     let result = s[0].split('').join('***')
+//     return result
+// }
+
+// let arr = ["turns", "are"]
+// let result = twoSort(arr);
+// console.log(result);
+
+// function replaceDots(str) {
+//     return str.replace(/\./g, '-');
+// }
+
+// let result = replaceDots('one.two.three');
+// console.log(result);
+
+// function replaceDigitsCard(cardNumber) {
+//     let arr = cardNumber.split('-')
+//     let result = [];
+//     for (let i = 0; i < arr.length-1; i++) {
+//         result.push(arr[i].replace(/\d/g, '*'));
+//     }
+//     result.push(arr[arr.length - 1]); 
+//     return result.join('-');
+// }
+
+// let result = replaceDigitsCard('1111-2222-3333-4444');
+// console.log(result);
+
+// function findMultiples(integer, limit) {
+//     let result = [];
+//     for (let i = integer; i <=  limit; i += integer) {
+//     result.push(i);
+//     }   
+//     return result;
+// }
+// let result = findMultiples(5, 25);
+// console.log(result);
+
+// function twoHighest(arr) {
+//     arr = [... new Set(arr)]
+//     arr.sort(function (a, b) {
+//         return b-a
+//     })
+//     if (arr.length < 2) return arr
+//         return [arr[0], arr[1]]
+//     }
+
+
+// let result = twoHighest([15, 20, 20, 17]);
+// console.log(result);
+
+// function stringy(size) {
+//   let result = '';
+//   for (let i = 0; i < size; i++) {
+//       if (i % 2 === 0) {
+//           result += '1';
+//       } else {
+//           result += '0';
+//       }
+//   }
+//   return result;
+// }
+
+// let result = stringy(6);
+// console.log(result);

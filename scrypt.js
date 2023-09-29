@@ -439,15 +439,81 @@
 //  console.log(result); // t
 
 
-function accum(s) {
-  // let s = "RqaEzty"
-  let letters = s.split('') 
-  let repeatedLetters = letters.map(function(letter,index) {
-    return letter.toUpperCase() + letter.toLowerCase().repeat(index)
-    }) // ["R-Qq 'Aaa' Eeee-Zzzzz-Tttttt-Yyyyyyy"]
-    return repeatedLetters.join('-')
+// function accum(s) {
+//   // let s = "RqaEzty"
+//   let letters = s.split('') 
+//   let repeatedLetters = letters.map(function(letter,index) {
+//     return letter.toUpperCase() + letter.toLowerCase().repeat(index)
+//     }) // ["R-Qq 'Aaa' Eeee-Zzzzz-Tttttt-Yyyyyyy"]
+//     return repeatedLetters.join('-')
 
-}
+// }
 
-let result = accum("RqaEzty")
-console.log(result); // "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+// let result = accum("RqaEzty")
+// console.log(result); // "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+
+// function filter_list(l) {
+//     // let newArr = []
+//     // for (let elem of l) {
+//     //     if (typeof elem == 'number') {
+//     //         newArr.push(elem)
+//     //     }
+//     // }
+//     // return newArr
+
+
+//     // return l.filter(function(elem) {
+//     //     return typeof elem == 'number'  // return true |  false
+//     // })
+
+
+//     return l.filter(Number.isInteger)
+// }
+
+// let result = filter_list([1,'a','b',0,15])
+// console.log(result);
+
+// var isSquare = function(n){
+//     return Nuber.isInteger(Math.sqrt(n))
+//   }
+
+// function isIsogram(str) {
+//     // let sorted = str.toLowerCase().split('').sort()
+//     // for (let i = 0; i < sorted.length; i++) {
+//     //     if (sorted[i] == sorted[i + 1]) {
+//     //         return false
+//     //     }
+        
+//     // }
+//     // return true
+//     return new Set(str.toLowerCase()).size == str.length
+// }
+
+// console.log(isIsogram("Dermatoglyphics"));
+// console.log(isIsogram("isIsogram"))
+
+
+// function XO(str) {
+//    // let str = "xxOo"
+//    let xCount = 0
+//    let oCount = 0
+//    for (let letter of str) {
+//     if (letter.toLowerCase() == 'x') {
+//         xCount++
+//     }
+//     if (letter.toLowerCase() == 'o') {
+//         oCount++
+//     }
+//    }
+//    return xCount == oCount 
+// //    if (xCount == oCount) {
+// //     return true
+// //    } else {
+// //     return false
+// //    }
+// }
+
+// console.log(XO('xxOo')); // true
+
+// Test.assertEquals(XO('xo'),true);
+// Test.assertEquals(XO("xxOo"),true);
